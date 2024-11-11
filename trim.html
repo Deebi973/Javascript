@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Str Method</title>
+</head>
+<body>
+    <script>
+        let str11= "Hello, Javascript!";
+
+        let trimmedStr = str11.trim();
+        console.log( "Trim",trimmedStr);
+
+        let upperStr = str11.toUpperCase();
+        console.log("Uppercase",upperStr);
+
+        let lowerStr = str11.toLowerCase();
+        console.log("Lowercase",lowerStr);
+ 
+        let subStr = str11.substring(7,11);
+        console.log("substr",subStr);
+  
+        let replaceStr = str11.replace("Javascript", "World");
+        console.log("replace",replaceStr);
+
+        console.log("charAct(5):",str11.charAt(8));
+       
+        let str1="Hello";
+        let str2="World!";
+        let concatStr=str1.concat(str2);
+        console.log("concat()",concatStr);
+
+        console.log("includes('Javascript'):",str11.includes("Javascript"));
+        console.log("includes('Python'):",str11.includes("Python"));
+
+        console.log("indexOf('Javascript'):",str11.indexOf("Javascript"));
+        console.log("indexOf('Python'):",str11.indexOf("Python"));
+       
+        //string into array
+        let fruits2="apple,banana,orange";
+        let fruits=fruits2.split(",");
+        console.log("split():",fruits);
+        
+        //assignment split---->convert string to array
+        let stds="std1,std2,std3,std4";
+        let stds2=stds.split(",");
+        console.log("split():",stds2);
+        //Slice
+        console.log(str11.slice(0,5));
+
+        //assignment
+        let name="Deebisha Mathiyazhagan ";
+        let substr=name.substring(9,22);
+        console.log(substr);
+        console.log(name.slice(-14,-1));
+        console.log(name.slice(9,22));
+
+        let repeatStr="Hello!";
+        console.log("repeat('repeatStr'):",repeatStr.repeat(3));
+       
+        console.log("search('Javascript'):",str11.search("//Javascript//"));
+        console.log("search('Javascript'):",str11.indexOf("//Javascript//",4));
+
+        let cl="AMS eng college";
+        console.log("repeat('AMS eng college'):",cl.search("college"));
+        console.log("repeat('AMS eng college'):",cl.indexOf("college",4));
+        console.log("repeat('AMS eng college'):",cl.search(/college/));
+
+        console.log("startsWith('Deebisha Mathiyazhagan'):",name.startsWith("Deebisha"));
+        console.log("startsWith('Deebisha Mathiyazhagan'):",name.startsWith("Mathiyazhagan"));
+
+        console.log("endsWith('Deebisha Mathiyazhagan'):",name.endsWith("Mathiyazhagan"));
+
+    </script>
+</body>
+</html>

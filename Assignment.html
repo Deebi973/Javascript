@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let groups=prompt(",");
+        let group2=groups.split(",");
+        console.log("split:",group2);
+
+        let groupString= group2.join(",");
+        console.log("join:",groupString);
+        
+       
+        let str=prompt("Enter the word");
+      let reversename=str.split("").reverse().join("");
+      if(str==reversename){
+        console.log("its palindrome");
+      }else{
+        console.log("its not palindrome");
+      }
+    </script>
+</body>
+</html>

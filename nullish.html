@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const a=null??"hello";
+        console.log(a);//??// after is null value
+ 
+        const b=0??'45';
+        console.log(b);
+
+        const c=undefined??'no value';
+        console.log(c);
+
+        const d=true??'no value'
+        console.log(d);
+  
+
+        const user={'name':'Deeran','age':4};
+        console.log(user.name);
+        console.log(user.address??'no address');
+        const city={'city':'Namakkal'};
+        console.log(city.city);
+    </script>
+</body>
+</html>

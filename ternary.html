@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const avg=90;
+        const grade=avg>=90?"A grade":"B grade";//condition?"value 1":"value 2"
+        console.log(grade);
+
+        const marks=85;
+        const result=marks>=90?"A grade":marks>80?"Topper":"avg";
+        console.log(result);
+
+       const gender=1.5;
+       const results=gender>=2?"Male":gender>1?"Female":"other";
+       console.log(results)
+
+
+       //Bitwise operators
+       const num1=2;//0010//10
+       const num2=3;//0011//11
+       const sum=num1&num2;
+       console.log(sum);
+       const sum1=num1|num2;
+       console.log(sum1);
+       const product=num1^num2;//00//11//false//10//01//true
+       console.log(product);
+       const not=~num2;//0-1 1-0 2--10//01
+       console.log(not);
+       
+       //shift
+       console.log(num1<<num2);
+       console.log(num1>>num2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+    
+</head>
+<body>
+    <script>
+      let fruits=["apple", "banana","cherry","date","kiwi","apple","banana"];
+
+      let hasCherry=fruits.includes("cherry");
+      console.log("includes example:",hasCherry);
+ 
+      let hasMelon=fruits.includes("melon");
+      console.log("includes example:",hasMelon);
+
+      let firstBanana=fruits.indexOf("banana");
+      console.log("indexOf example:",firstBanana);
+
+      let lastBanana=fruits.lastIndexOf("banana");
+      console.log("lastIndexOf example:",lastBanana);
+  
+      let fruits2=["berry","gouva"];
+      Newfruits=fruits.concat(fruits2);
+      console.log("concat",Newfruits);
+
+      //convert array to string
+      let fruitString=fruits.join(", ");
+      console.log("join example:",fruitString);
+
+      //albet order
+      let sortedFruit=fruits.sort();
+      console.log("sort example:",sortedFruit);
+
+      let reverseFruit=fruits.reverse();
+      console.log("sort example:",reverseFruit);
+     
+      let name=["Deebi","Hari","Deeran","Sugan","Duo"];
+      let lastname=name.pop();
+      console.log("pop:",lastname);
+      console.log(name);
+
+      let endname=name.push("Priya","mathi","karpagam");
+      console.log("push:",name);
+      console.log(name);
+
+      let shiftFruits=fruits.shift();
+      console.log("shift:",shiftFruits);
+      console.log(fruits);
+
+      let unshift=fruits.unshift("kiwi");
+      console.log("unshift",unshift);
+      console.log(fruits);
+
+      fruits.splice(3,0, "strwberry","plum");
+      console.log("splice",fruits);
+    </script>
+</body>
+</html>
