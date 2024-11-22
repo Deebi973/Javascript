@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datatype</title>
+</head>
+<body>
+   <script>
+        //console.log(tyoeof age);
+        //console.log(tyoeof x);
+        //console.log(tyoeof id);
+
+        let a=10;
+        let b=a;
+        console.log(b);
+
+        b=20;
+        a=100;
+        
+        console.log(a);
+        console.log(b);
+
+        //reference
+        let person1 = {name:"Alice",age:25};
+        let person2 = person1;
+
+        person2.age=30;
+
+        console.log(person1.age);
+        console.log(person2.age);
+
+        delete person1;
+        console.log(person1);
+        console.log(person2);
+   </script>
+</body>
+</html>

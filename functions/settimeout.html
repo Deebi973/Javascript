@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout function</title>
+</head>
+<body>
+    <script>
+        // setTimeout(function,1000)
+         setTimeout(()=>{
+            alert("This message will appear after 1.2 second");
+         },1200); //1000-->1sec
+
+        //  example 2
+        console.log("start")
+        setTimeout(()=>{
+            console.log("Timer set");
+         },1000);
+         console.log("end")
+
+         //  example 3
+         function greet(){
+            console.log("Hello World!")
+         }
+         setTimeout(greet,1500);
+
+        //  countdown timer
+        function counter(number){
+            if(number==0){
+                console.log("Time up")
+            }
+            else{
+                console.log(number)
+                setTimeout(counter,1000,number-1);
+            }
+        }
+        counter(6);
+
+         let name=prompt("enter the name");
+        setTimeout(()=>{
+            alert(`Hello ${name}`);
+        },1000)
+
+    </script>
+</body>
+</html>

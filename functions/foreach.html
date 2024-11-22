@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for Each function</title>
+</head>
+<body>
+    <script>
+        // for each
+        // array.foreach(function(element,index,array))
+
+        let fruits = ["Apple","Banana","Cherry"];
+        fruits.forEach(function(i){
+            console.log(i);
+        })
+
+        // aro function
+        fruits.forEach(i=>{
+            console.log(i);
+        })
+       
+        console.log("=====================");
+        // Example
+        let fvrt=["blue","black","meroon"];
+        fvrt.forEach(colors=>{
+            console.log(colors);
+        })
+
+        fruits.forEach(function(i,index){
+            console.log(index+":",i);
+        })
+
+        fruits.forEach(function(i,index,array){
+            array[index]=i+"juice";
+        });
+        console.log();
+
+
+        // assignment
+        let num=[1,2,3,4,5,6,7,8,9,10];
+        let arr1=[];
+        num.forEach(function(even){
+            if(even%2 === 0){
+                arr1.push(even);  
+            }
+        });
+        console.log("even num:",arr1)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setinterval function</title>
+</head>
+<body>
+    <script>
+        // setinterval(function,millisec);
+        // example 1
+        let counter=11;
+
+        function timer(){
+
+            counter--;
+            console.log(counter);
+            if(counter===0){
+                clearInterval(id1);
+                console.log("Timer stoped")
+            }
+        }
+        id1=setInterval(timer,1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+</head>
+<body>
+    <script>
+        let fruits=["apple","banana","cherry","apricot"];
+        let filter=fruits.filter((word)=>word.startsWith("a"))
+        console.log(filter)
+
+        let groups=["Deebisha","Deeran","Hariharan","divya"];
+        let filters=groups.filter((name)=>name.length>5)
+        console.log(filters);
+
+        const products = [
+        { name: "Laptop", price: 1000 },
+        { name: "Phone", price: 500 },
+        { name: "Tablet", price: 300 },
+      ];
+      let filter1=products.filter((name)=>name.price>400)
+      console.log(filter1)
+    </script>
+</body>
+</html>

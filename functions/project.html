@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<body>
+<script>
+   let students=[
+        {name:"alice",grades:[85,90,95]},
+        {name:"candy",grades:[86,89,94]},
+        {name:"breyer",grades:[80,70,85]},
+        {name:"blakile",grades:[90,93,95]},
+    ];
+    // map name:Alice,Avearge:86
+    // filter whose avg >70
+    // resuce:class average
+    console.log("========map function==========");
+   let total=students.map((student)=>{
+   let average= student.grades.reduce((sum,grade)=>sum+grade,0)/student.grades.length;
+   console.log(`Name:${student.name},average:${average}`)});
+   console.log(total);
+
+   console.log("========filter function==========");
+  const student1=[
+    {name:"alice",average:90},
+    {name:"candy",average:89},
+    {name:"breyer",average:78},
+    {name:"blackile",average:92},
+  ];
+  let toavg=student1.filter((classavg)=>classavg.average>70)
+  console.log(toavg);
+
+  console.log("========reduce function==========");
+  let classavg=student1.reduce((acc,average)=>acc>average?acc:average);
+  console.log("Class average:",classavg);
+
+</script>
+</body>
+</html> 

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function outer(){
+            var students=["blakile","breyer","candy","isla","sher","riyan","duru"];
+            function inner(){
+                var course=("DIGITAL MARKETING");
+                totalstudents=students.length;
+                console.log("Corse name:",course);
+                console.log("Class students:",students);
+                console.log("num of students in the class:",totalstudents)
+            }
+            return inner;
+        }
+        var result=outer();
+        result();
+        
+       
+
+    </script>
+</body>
+</html>

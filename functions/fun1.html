@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(...arg){
+            let total=0;
+            for(let i=0;i<arg.length;i++){
+                total+=arg[i];
+            }
+            return total;
+        }
+        console.log(sum(1,2,3,4,5));
+
+        function Hello(greeting,...arg){
+           for(let i=0;i<arg.length;i++){
+            // console.log(`Hello ${arg[i]}`);
+            console.log(greeting+" "+arg[i]);
+           }
+        }
+        Hello("Hello","JK","V","Kim");
+
+
+        function Hello(greeting,...arg){
+            // console.log(`Hello ${arg[i]}`);
+            console.log(`${greeting},${arg.join(" and ")}`);
+           }
+        Hello("Hello","JK","V","Kim");
+
+
+    </script>
+</body>
+</html>

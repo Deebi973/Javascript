@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        // define & calling the function
+        // function definition
+        function sum(a,b){
+            return a+b;
+        }
+        console.log(sum( 5, 20 ));
+        console.log(sum( 5, "20"));
+        console.log(sum( 5, null));
+        console.log(sum( 5, undefined));
+
+        function greet(){
+            return "Hello World";
+        }
+        console.log(greet());
+
+        // arbitary argument-->for without argument using
+
+        function add(){
+            let total=0;
+            for(let i=0;i<arguments.length;i++){
+                total+=arguments[i];
+            }
+            return total;
+        }
+        console.log(add(8,16,24,32,40));
+        // console.log(add("Hii","I","am","Deebisha"));
+
+        // assignment 1
+      function sum(array){
+       for(let i in array){
+        console.log(i);
+       }
+       return array;
+      }
+      const array1=[0,1,2,3];
+      sum(array1);
+
+    //   assignment 2
+      function file(object){
+        for(let key in object){
+            console.log(`${key}:${object[key]}`);
+        }
+      }
+      const objects={name:"Kim",age:30}
+      file(objects);
+    </script>
+</body>
+</html>

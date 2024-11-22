@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    // function to expression
+    // anonymus function
+
+
+    const add=function(a,b){
+        return a+b;
+    }
+    console.log(add);
+    console.log(add(5,10));
+
+    const sub=function(a,b){
+        return a-b;
+    }
+   console.log("Substraction:",sub(50,32));
+
+   const div=function(a,b){
+        return a/b;
+    }
+   console.log("Division:",div(81,9));
+
+   const mul=function(a,b){
+        return a*b;
+    }
+   console.log("Multiplication:",mul(8,65));
+
+
+// recursion
+  let recurse=function recurse(n){
+    if (n==0)return 1;
+    return n*recurse(n-1);
+  }
+  console.log(`recirsion value ${recurse(5)}`)
+
+  function  palendrome(...str1){
+            let split = str.split('');
+            let reverse= split.reverse().join('');
+            if(str==reverse){
+                console.log(" its a palindrom ")
+            }
+            else {
+                console.log(" its  not a palindrom ")
+            }
+
+        }
+        let str=prompt("enter the data : ")
+        palendrome(str);
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            let schoolClass = {
+        students: [],
+        addStudent: function (studentName) {
+        this.students.push(studentName);
+        console.log(`${studentName} your name added sucessfully.`);
+        },
+
+        countStu: function () {
+        console.log(`Total number of students: ${this.students.length}`);
+        return this.students.length;
+        },
+
+        displayStu: function () {
+        console.log("Students in the class:");
+        this.students.forEach((student, index) => {
+            console.log(`${index + 1}. ${student}`);
+        });
+    }
+    
+};
+
+schoolClass.addStudent("tamil"); 
+schoolClass.addStudent("selvan"); 
+schoolClass.addStudent("vickey"); 
+schoolClass.addStudent("ram"); 
+schoolClass.addStudent("vijay"); 
+schoolClass.addStudent("tamil"); 
+schoolClass.addStudent("selvan"); 
+schoolClass.addStudent("vickey"); 
+schoolClass.addStudent("ram"); 
+schoolClass.addStudent("vijay"); 
+schoolClass.addStudent("tamil"); 
+schoolClass.addStudent("selvan"); 
+schoolClass.addStudent("vickey"); 
+schoolClass.addStudent("ram"); 
+schoolClass.addStudent("vijay"); 
+console.log(schoolClass.students); 
+schoolClass.countStu();
+schoolClass.displayStu();
+
+    
+
+    </script>
+</body>
+</html>

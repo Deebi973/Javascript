@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce</title>
+</head>
+<body>
+    <script>
+        let arr1 =[1,2,3,4];
+        let total=arr1.reduce((acc,num)=>acc+num,0);
+        console.log(total);
+
+        let total1=arr1.reduce((acc,num)=>{
+            // console.log(acc);
+            // console.log(num);
+            return acc*num;
+        },1)
+
+        console.log(total1);
+
+        const numbers = [10, 20, 30, 40, 50];
+        let bignum=numbers.reduce((acc,num)=>
+            acc>num?acc:num );
+        console.log(bignum,"Biggest number");
+
+        const products = [
+        { name: "Laptop", price: 1000 },
+        { name: "Phone", price: 500 },
+        { name: "Tablet", price: 300 },
+      ];
+      let totalprice=products.reduce((acc,product)=>acc+product.price,0);
+      console.log(totalprice);
+
+   
+    </script>
+</body>
+</html>

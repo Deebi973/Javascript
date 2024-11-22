@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map function</title>
+</head>
+<body>
+    <script>
+        let numbers=[1,2,3,4];
+        let double=[]
+        for (let i of numbers){
+            double.push(i*i)
+        }
+        console.log(double);
+        // map function
+        let double_new=numbers.map(num=>num*num)
+        console.log(double_new)
+
+        // using index[1,2,3,4]--[0,1,2,3]
+        let indexed =numbers.map((num,index)=>num*index);
+        console.log(indexed);
+
+        let str=['1','2','3','4'];
+        let number1=str.map((str)=>parseInt(str) )
+        console.log(number1);
+
+        let users=[
+            {name:"Jk",age:20},
+            {name:"V",age:30},
+            {name:"kim",age:30}
+         ]
+         let ages=users.map(user=>user.age)
+         console.log(ages)
+
+        let products=[
+            {name:"laptop",price:1500},
+            {name:"phone",price:500},
+            {name:"Watch",price:400},
+        ];
+        price=products.map((product)=>({price:product.price}));
+        console.log(price);
+
+        productdiscount=products.map((i)=>({...i,
+            discount:i.price*0.3,
+        }))
+        console.log(productdiscount);
+    </script>
+</body>
+</html>

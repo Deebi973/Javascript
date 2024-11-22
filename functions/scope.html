@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope function</title>
+</head>
+<body>
+    <script>
+        if(true){
+            console.log("Hii");
+            var a=10; //block scope let & const
+            console.log(a);
+        }
+        console.log(a);
+
+
+        function fun1(){
+            var b=20;
+            console.log(b);
+            fun2=()=>{
+                console.log(b);
+            }
+            fun2();
+        }
+        fun1();
+
+    </script>
+</body>
+</html>

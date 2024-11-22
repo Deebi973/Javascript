@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every & some function</title>
+</head>
+<body>
+    <script>
+        let n=[2,4,6,8,10];
+        let out=n.every((i)=>{
+            return i%2==0;
+        });
+        console.log(out);
+
+        // example 2
+        let groups=["blakile","breyer","grady","isha"];
+        let isnames=groups.every((group)=>group.length>=4);
+        console.log(isnames);
+
+        // assignmrnt
+        let names=["deebi","hari","deeran","sugan","harsha"];
+        let anames=names.every((name)=>
+    name.includes("a"));
+        let aanames=names.filter((word)=>word.toLowerCase().includes("a"));
+    console.log(anames);
+    console.log(aanames);
+
+    // example3
+    const numbers=[2,-4,6,8];
+    const hasNegative=numbers.some((num)=>num<0);
+    console.log(hasNegative);
+        
+    </script>
+</body>
+</html>

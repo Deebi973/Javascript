@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <script>
+        function outer(){
+            var a=10;
+            function inner(){
+                var b=20;
+                console.log(a+b);
+            }
+            return inner;
+        }
+        var result=outer();
+        result();
+
+        // example2
+        let counter=()=> {
+            let count=0;
+            return() =>{
+                count++;
+                console.log(count)
+            }
+        };
+        let counterfunction=counter();
+        counterfunction();
+        counterfunction();
+        counterfunction();
+        counterfunction();
+
+        // assignment
+        function greet(){
+            var grt="Hello";
+            function inner(){
+                var name="Deeran";
+                console.log(grt,name);
+            }
+            return inner;
+        }
+        var result=greet();
+        result();
+
+        // assignment3
+        function greeting(){
+            var grt="Hii";
+            function inner(){
+                var name="Pooja";
+                int="How is your day...?"
+                console.log(grt,name,int);
+            }
+            return inner;
+        }
+        var result=greeting();
+        result();
+
+        console.log("===========================");
+        // assignment
+        function outer(){
+            var a=8;
+            function inner(){
+                var b=9;
+                c=5;
+                console.log("Multiplication:",a*b*c);
+            }
+            return inner;
+        }
+        var result=outer();
+        result();
+
+    </script>
+</body>
+</html>
